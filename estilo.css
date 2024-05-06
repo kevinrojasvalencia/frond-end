@@ -1,0 +1,58 @@
+body {
+    background-color: #111;
+    color: #fff;
+    font-family: 'Pixel', Arial, sans-serif;
+}
+
+h1 {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    animation: neon-glow 1.5s infinite alternate; /* Animación de brillo neon */
+}
+
+
+
+@keyframes neon-glow {
+    0% {
+        text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #0ff, 0 0 70px #0ff, 0 0 80px #0ff, 0 0 100px #0ff, 0 0 150px #0ff;
+    }
+    100% {
+        text-shadow: 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff, 0 0 50px #0ff, 0 0 80px #0ff, 0 0 90px #0ff, 0 0 110px #0ff, 0 0 200px #0ff;
+    }
+}
+
+table {
+    width: 90%; 
+    margin: 20px auto; /* Centrar la tabla y agregar espacio en la parte superior e inferior */
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 20px; 
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #333;
+    color: #fff;
+    cursor: pointer;
+    animation: neon-glow 1.5s infinite alternate;   
+}
+
+td {
+    font-family: 'Pixel', Arial, sans-serif;
+}
+
+td, th {
+    font-size: 20px; /* Aumentar el tamaño de la fuente para mejorar la legibilidad */
+}
+
+#games-table {
+    border: 2px solid #fff;
+}
+
+#games-table tr:hover {
+    background-color: #222;
+}
